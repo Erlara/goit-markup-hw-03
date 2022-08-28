@@ -75,7 +75,6 @@ a {
 .header-container {
   display: flex;
   align-items: center;
-  padding-left: 215px;
 }
 
 .nav {
@@ -95,16 +94,12 @@ a {
   letter-spacing: 0.03em;
   color: var(--black-txt-cl);
 
-  margin-top: 24px;
   margin-right: 93px;
-  margin-bottom: 25px;
 }
 
 .list-nav {
   display: flex;
   gap: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
   align-items: center;
 }
 
@@ -126,11 +121,15 @@ a {
   color: var(--link-txt-cl);
 }
 
+.link-nav {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
+}
+
 .list-contacts {
   display: flex;
   gap: 50px;
-  margin-top: 32px;
-  margin-bottom: 32px;
   align-items: center;
 }
 
@@ -146,19 +145,13 @@ a {
 /* Hero-section */
 .hero-section {
   background-color: var(--secondary-bgd-cl);
+  padding: 200px 0;
 }
 
 .hero-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.hero-container:first-child {
-  padding-top: 200px;
-}
-.hero-container:last-child {
-  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -198,11 +191,6 @@ a {
 }
 
 /* trait-section */
-.trait-section {
-  background-color: var(--main-bgr-cl);
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .visually-hidden {
   position: absolute;
@@ -237,6 +225,7 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-txt-cl);
+  margin-bottom: 10px;
 }
 .trait-text {
   font-size: 14px;
@@ -246,7 +235,7 @@ a {
 }
 /* work-section */
 .work-section {
-  background-color: var(--main-bgr-cl);
+  padding-top: 0;
 }
 .work-title {
   font-weight: 700;
@@ -261,7 +250,6 @@ a {
 .work-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
 }
 
 /* team-section */
@@ -276,14 +264,12 @@ a {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-txt-cl);
-  padding-top: 94px;
 }
 
 .team-list {
   display: flex;
   gap: 30px;
-  padding-bottom: 94px;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
 .team-card {
@@ -303,8 +289,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--title-txt-cl);
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 .team-position {
   font-size: 16px;
@@ -312,19 +297,21 @@ a {
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
   text-align: center;
-  padding-bottom: 30px;
-}
+  }
+
+  .team-container-name {
+    padding: 30px 0;
+  }
 
 /* Footer */
 
 .footer {
   background-color: var(--secondary-bgd-cl);
+  padding: 60px 0;
 }
 
-.footer-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  padding-left: 215px;
+.logo-footer {
+  margin-right: 0;
 }
 
 .address-link {
@@ -355,15 +342,6 @@ a {
 }
 
 /* 2page Portfolio */
-
-.portfolio-page {
-  background-color: var(--main-bgr-cl);
-}
-
-.portfolio-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 .portfolio-list-btn {
   display: flex;
@@ -419,6 +397,7 @@ a {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--title-txt-cl);
+  margin-bottom: 4px;
 }
 .portfolio-project {
   font-size: 16px;
